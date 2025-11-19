@@ -4,6 +4,16 @@
         <meta charset="UTF-8"/>
         <title>Taste of Tuscany</title>
         <link type="text/css" rel="stylesheet" href="w16_Tuscany.css"/>
+        <script type="text/javascript">
+            function Appear() {
+                elem = document.getElementById("Specials");
+                elem.style.display = "block";
+            }
+            function Disappear() {
+                elem = document.getElementById("Specials");
+                elem.style.display = "none";
+            }
+        </script>
     </head>
     <body>
     <article id="Main">
@@ -14,7 +24,7 @@
             width="857.6" height="569.6"></a>
             <ul>
                 <li>Fine Italian Dining</li>
-                <li><a href="">Daily Specials</a></li>
+                <li><button onclick="Appear()">Daily Specials</button></li>
                 <li>Licensed</li>
                 <li>Banquet Room</li>
                 <li>Open Daily Until 11pm</li>
@@ -36,7 +46,8 @@
             <li><i>Crostini con Salsiccia</i></li>
             <li><i>Ribollita</i></li>
             </ol>
-        <p><a href=""><b>Home</b></a></p>
+        <p><button onclick="Disappear()"><b>Home</b></button></p>
     </article>
     </body>
 </html>
+/* Website:https://caden1897.github.io/w16_Tuscany.html */
